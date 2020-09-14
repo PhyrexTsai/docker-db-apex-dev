@@ -1,0 +1,40 @@
+@endpoint = http://localhost:8080
+//@endpoint = http://ed6236386067.ngrok.io
+
+### GET all employees
+GET {{endpoint}}/ords/hr/rest-v1/employees/
+
+### GET by employees id
+GET {{endpoint}}/ords/hr/rest-v1/employees/7788
+
+### POST employees
+POST {{endpoint}}/ords/hr/rest-v1/employees/
+Content-Type: application/json
+
+{
+  "empno": 9997,
+  "ename": "HALL",
+  "job": "ANALYTICS",
+  "mgr": 7782,
+  "hiredate": "01-JAN-2016",
+  "sal": 1000,
+  "comm": 10,
+  "deptno": 10
+}
+
+### PUT employees
+PUT {{endpoint}}/ords/hr/rest-v1/employees/9998
+Content-Type: application/json
+
+{
+  "ename": "XXXX",
+  "job": "NOTHING",
+  "mgr": 7782,
+  "hiredate": "01-JAN-2016",
+  "sal": 2020,
+  "comm": 10,
+  "deptno": 10
+}
+
+### DELETE employees
+DELETE {{endpoint}}/ords/hr/rest-v1/employees/9999
