@@ -12,7 +12,7 @@ POST {{endpoint}}/ords/hr/rest-v1/employees/
 Content-Type: application/json
 
 {
-  "empno": 9997,
+  "empno": 9993,
   "ename": "HALL",
   "job": "ANALYTICS",
   "mgr": 7782,
@@ -23,7 +23,7 @@ Content-Type: application/json
 }
 
 ### PUT employees
-PUT {{endpoint}}/ords/hr/rest-v1/employees/9998
+PUT {{endpoint}}/ords/hr/rest-v1/employees/9991
 Content-Type: application/json
 
 {

@@ -150,7 +150,6 @@ END;
 #### GET /employees (READ LIST)
 
 ```
-## C
 BEGIN
   ORDS.define_template(
     p_module_name     => 'rest-v1',

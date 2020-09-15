@@ -34,5 +34,3 @@ export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/oracle/instantclient_19_8"
 ```
 
 source ~/.profile
-
-## 
