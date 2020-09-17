@@ -126,15 +126,6 @@ END;
 
 ```
 BEGIN
-  ORDS.DEFINE_MODULE(
-    p_module_name => 'rest-v1',
-    p_base_path   => 'rest-v1/'
-  );
-END;
-```
-
-```
-BEGIN
   ORDS.enable_object (
     p_enabled      => TRUE,
     p_schema       => 'TESTUSER1',
@@ -144,6 +135,16 @@ BEGIN
   );
     
   COMMIT;
+END;
+```
+
+Optional
+```
+BEGIN
+  ORDS.DEFINE_MODULE(
+    p_module_name => 'rest-v1',
+    p_base_path   => 'rest-v1/'
+  );
 END;
 ```
 
@@ -343,3 +344,4 @@ SELECT id, template_id, source_type, method, source FROM user_ords_handlers ORDE
 - https://www.oraclecloudadmin.com/2017/03/oracle-create-rest-enable.html
 - https://k21academy.com/oracle-integration-cloud-service/how-to-use-oracle-rest-data-services-ords/
 - https://docs.oracle.com/cd/E56351_01/doc.30/e87809/ORDS-reference.htm#AELIG90208
+- https://oracle-base.com/articles/misc/oracle-rest-data-services-ords-autorest
